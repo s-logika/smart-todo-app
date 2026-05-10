@@ -40,8 +40,8 @@ export default function SignupPage() {
             password,
             createdAt: new Date().toISOString(),
         };
-        saveUsers([...users, newUser]); // saved to smart_todo_users
-        saveCurrentUser(newUser); // saved to smart_todo_user
+        saveUsers([...users, newUser]);
+        saveCurrentUser(newUser);
         router.push("/");
     }
 
@@ -66,7 +66,7 @@ export default function SignupPage() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Raj Joy"
+                    placeholder="logika logeswaran"
                     className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 />
             </div>
@@ -78,7 +78,7 @@ export default function SignupPage() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="joy@example.com"
+                    placeholder="logika@example.com"
                     className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 />
             </div>
